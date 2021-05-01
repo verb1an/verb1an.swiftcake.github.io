@@ -16,13 +16,13 @@
             <div class="header__inner">
                 <a href="" class="logo"><span>Sweet</span>Cakes</a>
                 <nav class="nav">
-                    <a href="" class="link">Home</a>
-                    <a href="" class="link">Products</a>
-                    <a href="" class="link">Team</a>
-                    <a href="" class="link">Abouts us</a>
-                    <a href="" class="link">Features</a>
+                    <a href="#intro" class="link">Home</a>
+                    <a href="#products" class="link">Products</a>
+                    <a href="#team" class="link">Team</a>
+                    <a href="#about" class="link">Abouts us</a>
+                    <a href="#features" class="link">Features</a>
                 </nav>
-                <a href="" class="btn btn--def" id="buy">Order</a>
+                <a class="btn btn--def" id="buy" data--popap-toggle="order">Order</a>
             </div>
         </div>
     </header>
@@ -66,31 +66,26 @@
                 <div class="content">
                     <div class="slider">
                         <article class="item">
-                            <!-- svg -->
                             <span class="i-delicios"></span>
                             <h4 class="name">Delicious</h4>
                             <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi aliquid, laboriosam aliquam et ad eos veritatis! Nostrum in deleniti, quae dicta tempora maxime? Aut!</div>
                         </article>
                         <article class="item">
-                            <!-- svg -->
                             <span class="i-fast"></span>
                             <h4 class="name">Fast</h4>
                             <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi aliquid, laboriosam aliquam et ad eos veritatis! Nostrum in deleniti, quae dicta tempora maxime? Aut!</div>
                         </article>
                         <article class="item">
-                            <!-- svg -->
                             <span class="i-inex"></span>
                             <h4 class="name">Inexpensive</h4>
                             <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi aliquid, laboriosam aliquam et ad eos veritatis! Nostrum in deleniti, quae dicta tempora maxime? Aut!</div>
                         </article>
                         <article class="item">
-                            <!-- svg -->
                             <span class="i-recipe"></span>
                             <h4 class="name">Special recipes</h4>
                             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit adipisci quis cumque soluta. Esse, error.</div>
                         </article>
                         <article class="item">
-                            <!-- svg -->
                             <span class="i-ok"></span>
                             <h4 class="name">Top quality</h4>
                             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit adipisci quis cumque soluta. Esse, error.</div>
@@ -109,10 +104,10 @@
                     <h3 class="subtitle">The best ingredients, perfect cooking, fast delivery - all this is about our buns</h3>
 
                     <div class="product__nav">
-                        <a href="" class="active">All</a>
-                        <a href="">Cakes</a>
-                        <a href="">Small Cakes</a>
-                        <a href="">Cupcakes</a>
+                        <a class="active" data--filter-inp="all">All</a>
+                        <a data--filter-inp="cake">Cakes</a>
+                        <a data--filter-inp="smallcake">Small Cakes</a>
+                        <a data--filter-inp="cupcake">Cupcakes</a>
                     </div>
                 </div>
 
@@ -238,7 +233,6 @@
             </div>
         </div>
     </section>
-
     <section class="section" id="about">
         <div class="container">
             <div class="section__inner">
@@ -266,41 +260,115 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
     <section class="section" id="features">
         <div class="container">
             <div class="section__inner">
                 <div class="section__headers">
                     <h2 class="title">Features</h2>
+                    <h3 class="subtitle">Useful information for customers</h3>
                 </div>
             </div>
             <div class="content">
-                <div class="item active">
+                <div class="item">
                     <img src="images/features/1.jpg" alt="">
+                    <h4 class="name">БОЛЬШОЙ ВЫБОР НАЧИНОК!</h4>
+                    <div class="text">
+                        <p>Особенность нашей кондитерской – заказчики сами могут выбрать вкус начинки: «Птичье молоко», «Молочная девочка», «Творожный», «Йогуртовый», «Медовый», «Эстерхази», «Шоколадный обалденный», «Французкая серия» и многие другие</p>
+                    </div>
                 </div>
                 <div class="item">
                     <img src="images/features/2.jpg" alt="">
+                    <h4 class="name">ПОМОЖЕМ ВЫБРАТЬ НАЧИНКУ</h4>
+                    <div class="text">
+                        <p>Мы приготовим любой торт на ваш выбор, просто позвоните и расскажите, чего бы вам хотелось.Если вы не определились с предпочтениями, мы опишем все начинки, поможем выбрать самые вкусные, посоветуем, как лучше украсить изделие.</p>
+                    </div>
                 </div>
                 <div class="item">
                     <img src="images/features/3.jpg" alt="">
+                    <h4 class="name">НАЧИНКА ПО ВАШЕМУ РЕЦЕПТУ</h4>
+                    <div class="text">
+                        <p>Ваша бабушка знает уникальный рецепт и вы хотите его попробовать, расскажите нам о нем, и мы воплотим его в виде уникального торта по вашему рецепту. Доверьте нам изготовление десерта на сладкий стол. Мы гарантируем – ваш торт будет уникальным, бесподобно красивым и феерично вкусным!</p>
+                    </div>
                 </div>
                 <div class="item">
                     <img src="images/features/4.jpg" alt="">
+                    <h4 class="name">МНОГОЯРУСНЫЙ ТОРТ</h4>
+                    <div class="text">
+                        При выборе учтите некоторые нюансы. Нежные воздушные начинки нельзя размещать на нижних ярусах двух, трехъярусных и т.д. тортов. Они просядут под массой верхней части. А вот одноярусные изделия могут быть с любыми, в том числе и с самыми легкими, пористыми начинками.
+                    </div>
                 </div>
                 <div class="item">
                     <img src="images/features/5.jpg" alt="">
+                    <h4 class="name">ВЫБОР ВЕСА И РАЗМЕРА ТОРТА</h4>
+                    <div class="text">
+                        <p>Коржи и крема мы создаем на основе: муки, яиц, настоящего сливочного масла, фермерских сливок, фермерского творога, и других живых продуктов.</p>
+                    </div>
                 </div>
-                <div class="item">
+                <div class="item ">
                     <img src="images/features/6.jpg" alt="">
+                    <h4 class="name">ДОСТАВКА ТОРТОВ</h4>
+                    <div class="text">
+                        <p>Мы доставляем торты по Калининграду и Калининградской области. У кондитерской    <a href="" class="link">tortik39.ru</a> свой транспорт, отлично организована работа службы доставки, поэтому даже если вы живете в 100-300 км от нас, это не представляет проблемы.</p>
+                    </div>
                 </div>
                 <div class="item">
                     <img src="images/features/7.jpg" alt="">
+                    <h4 class="name">КАК ЗАКАЗАТЬ ТОРТ</h4>
+                    <div class="text">
+                        <p>Наша кондитерская изготавливает лучшие торты в Калининграде. Мы дорожим мнением покупателей, поэтому, чтобы все заказчики остались довольны качеством нашей продукции, просим позаботиться о заказе десерта за 7-10 дней до мероприятия.</p>
+                    </div>
                 </div>
                 <div class="item">
                     <img src="images/features/8.jpg" alt="">
+                    <h4 class="name">ГАРАНТИРОВАННОЕ КАЧЕСТВО!</h4>
+                    <div class="text">
+                        <p>Мы гордимся своей безупречной репутацией, выкладываемся на все 100%, чтобы заказчики были довольны, и если вдруг торт вас не устроит – готовы вернуть за него деньги</p>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <footer class="section" id="footer">
+        <div class="container">
+            <div class="section__inner">
+                <div class="section__headers">
+                    <a href="index.html" class="logo">SwiftCake</a>
+                </div>
+                <div class="content">
+                    <div class="tab">
+                        <a href="" class="link">About</a>
+                        <a href="" class="link">Our leadership</a>
+                        <a href="" class="link">Cooperation</a>
+                        <a href="" class="link">Stocks</a>
+                        <a href="" class="link">Contact</a>
+                        <a href="" class="link">Privice Polycy</a>
+                    </div>
+                    <div class="tab social">
+                        <h3 class="title">Follow Us</h3>
+                        <a href="" class="link"><span class="i-vk"></span></a>
+                        <a href="" class="link"><span class="i-instagram"></span></a>
+                        <a href="" class="link"><span class="i-facebook"></span></a>
+                    </div>
+                </div>
+                <div class="cpr">@2021 by Tabyshkin Alexey, gagpk 1328</div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="popap" data--popap="order">
+        <div class="popap__inner">
+            <a class="btn btn--close"></a>
+            <h4 class="title">Ваш заказ в нашем ресторане:</h4>
+            <h4 class="subtitle">Или вы можете позвонить по номеру <a class="link" href="tel:+79999997214">+7 999 999-72-14</a></h4>
+
+            <div class="content">
+                <h4 class="noitems">В вашем заказе пока ничего нет, <a href="#products" class="link nobtn--close">Перейти в товары</a></h4>
+            </div>
+
+            <a class="btn btn--wh" id="btn--popap-order" style="display: block;">Оформить заказ</a>
         </div>
     </section>
     
