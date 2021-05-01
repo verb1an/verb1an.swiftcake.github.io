@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    menu();
     adv__slider();
     filter__products();
     teamSlider();
@@ -74,7 +75,7 @@ const adv__slider = () => {
 
     function move() {
         items.forEach((item) => {
-            item.style = `transform: translateX(${item.getBoundingClientRect().width*-active}px)`;
+            item.style = `transform: translateX(${item.getBoundingClientRect().width*-active-(20*active)}px)`;
         });
 
         if( active == 0 ) {
@@ -163,10 +164,34 @@ const popap = () => {
     popap__close.forEach((el) => {
         el.addEventListener('click', function() {
             document.querySelector('.popap.open').classList.remove('open');
-            document.querySelector('html').classList.toggle('hidden');
+            document.querySelector('html').classList.remove('hidden');
             document.querySelectorAll('.section, .header').forEach((el) => el.style = `padding-right: 0px`);
         })
     })
+}
+
+const menu = () => {
+    const bar = document.querySelector('.btn--bar');
+    const menu = document.querySelector('.header');
+    const items = document.querySelectorAll('.header .nav a');
+
+    bar.addEventListener('click', function() {
+        menu__restore();
+    })
+
+    if( window.innerWidth <= 791 ) {
+        items.forEach( (el) => {
+            el.addEventListener('click', function () {
+                menu__restore();
+            })
+        })
+    }
+
+    function menu__restore () {
+        bar.classList.toggle('active');
+        menu.classList.toggle('mobile--active');
+        document.querySelector('html').classList.toggle('hidden');
+    }
 }
 
 function getScrollbarWidth() {

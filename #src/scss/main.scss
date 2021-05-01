@@ -145,7 +145,7 @@ a{
 
 #intro{
     position: relative;
-    height: calc(100vh);
+    height: 780px;
     background-image: url('../images/main/intro-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -160,9 +160,9 @@ a{
         background: rgba(0, 0, 0, .24);
 
         display: flex;
-        align-items: flex-end;
-
-        padding-bottom: 200px;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 0;
     }
 
     .section__headers{
@@ -171,10 +171,8 @@ a{
 
     .content{
         img{
-            transform: translateY(100px);
-            border-radius: 50%;
             overflow: hidden;
-            max-width: 600px;
+            max-height: 600px;
         }
     }
 
@@ -725,3 +723,4 @@ a{
     }
 }
 
+@import 'media.scss';
