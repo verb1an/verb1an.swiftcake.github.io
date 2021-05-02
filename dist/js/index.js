@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     filter__products();
     teamSlider();
     popap();
+    totop();
 });
 
 const teamSlider = () => {
@@ -179,19 +180,29 @@ const menu = () => {
         menu__restore();
     })
 
-    if( window.innerWidth <= 791 ) {
-        items.forEach( (el) => {
-            el.addEventListener('click', function () {
+    items.forEach( (el) => {
+        el.addEventListener('click', function () {
+            if( menu.classList.contains('mobile--active') ) {
                 menu__restore();
-            })
+            }
         })
-    }
+    })
 
     function menu__restore () {
         bar.classList.toggle('active');
         menu.classList.toggle('mobile--active');
         document.querySelector('html').classList.toggle('hidden');
     }
+}
+
+const totop = () => {
+    const btn = document.querySelector('#btn--totop');
+
+    btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('html').scrollTo(0, 0);
+        history.pushState(null, null, '/index.html');
+    })
 }
 
 function getScrollbarWidth() {

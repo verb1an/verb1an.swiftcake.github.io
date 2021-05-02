@@ -723,4 +723,33 @@ a{
     }
 }
 
+#btn--totop{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    margin: 20px;
+    background-color: #f53838;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    z-index: 200;
+
+    span{
+        width: 32px;
+        height: 32px;
+        color: #fff;
+        font-size: 1rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotateZ(-90deg);
+    }
+
+    &:active{
+        transform: scale(0.8);
+    }
+}
+
 @import 'media.scss';
